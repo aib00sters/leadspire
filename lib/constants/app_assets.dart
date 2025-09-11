@@ -1,0 +1,47 @@
+   class AppAssets {
+  static const String appLogo = "assets/images/app_logo.png";
+  static const String loginBgImage = "assets/images/login_bg.png";
+  static const String welcomePageImage = "assets/images/welcome_page_img.png";
+  static const String avatar1 = "assets/images/avatar1.png";
+  static const String avatar2 = "assets/images/avatar2.png";
+  static const String avatar3 = "assets/images/avatar3.png";
+  static const String avatar4 = "assets/images/avatar4.png";
+  static const String avatar5 = "assets/images/avatar5.png";
+  static const String avatar6 = "assets/images/avatar6.png";
+  static const String addMoreImage = "assets/images/img_add_more.png";
+  static const String homeCardImage = "assets/images/home_card.png";
+  static const String homeIcon = "assets/images/Icon_home.png";
+  static const String heartIcon = "assets/images/Icon_heart.png";
+  static const String menuIcon = "assets/images/Icon_menu.png";
+  static const String profileIcon = "assets/images/Icon_profile.png";
+  static const String backArrow = "assets/images/back_arrow.png";
+  static const String dashboardIcon = "assets/images/ic_dashboard.png";
+  static const String lockIcon = "assets/images/ic_lock.png";
+  static const String notificationIcon = "assets/images/ic_notification.png";
+  static const String starIcon = "assets/images/ic_star_circle.png";
+  static const String subscriptionIcon = "assets/images/ic_subscription.png";
+  static const String themeIcon = "assets/images/ic_theme.png";
+  static const String atSign = "assets/images/at_sign.png";
+  static const String diceImage = "assets/images/img_dices.png";
+  static const String enterNameImage = "assets/images/enter_name_bg.png";
+  static const String maleImage = "assets/images/img_male.png";
+  static const String femaleImage = "assets/images/img_female.png";
+  static const String kidImage = "assets/images/img_kid.png";
+  static const String millennialImage = "assets/images/img_millennial.png";
+  static const String adultImage = "assets/images/img_adult.png";
+  static const String oldImage = "assets/images/img_old.png";
+  static const String activityImage1 = "assets/images/img_activity1.png";
+  static const String activityImage2 = "assets/images/img_activity2.png";
+  static const String activityImage3 = "assets/images/img_activity3.png";
+  static const String chatIcon = "assets/images/ic_chat.png";
+  static const String doubleTickImage = "assets/images/img_double_tick.png";
+  static const String communityImage = "assets/images/img_community.png";
+  static const String requestIcons = "assets/images/ic_requests.png";
+  static const String articons = "assets/images/art.png";
+  static const String videoicon = "assets/images/media-player.png";
+  static const String homebaground = "assets/images/home-baground.png";
+  static const String malepic= "assets/images/male.png";
+  static const String femalepic= "assets/images/female .png";
+  static const OPENAI_API_KEY =
+      "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";
+}
