@@ -325,5 +325,6 @@ class _SelectGenderPageState extends State<SelectGenderPage> {
 
     await IsarServices().updateAge(agegroup: agegroup.groupRange);
     AppNavigator.pushNamed("/personalDetails");
+    // AppNavigator.pushNamed("/avatarSelection");
   }
 }

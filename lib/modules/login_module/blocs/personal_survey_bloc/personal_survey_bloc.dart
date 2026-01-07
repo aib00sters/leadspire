@@ -70,14 +70,27 @@ class PersonalSurveyBloc
               .collection('questions')
               .where('parentAnswerId', arrayContains: event.selectedAnsId)
               .get();
-
+          print('Found ${questionnaire.docs.length} questions');
           final answerDocs = await FirebaseFirestore.instance
               .collection('answers')
               .where('questionId', isEqualTo: questionnaire.docs.first.id)
               .get();
 
-          List<AnswerModel> answerList = List<AnswerModel>.from(
-              answerDocs.docs.map((e) => AnswerModel.fromJson(e.data())));
+          List<AnswerModel> answerList =
+              List<AnswerModel>.from(answerDocs.docs.map((e) {
+            print('Raw document data: ${e.data()}'); // Debug print
+
+            // Check for null values
+            final data = e.data();
+            if (data['imageUrl'] == null) {
+              print('⚠️ imageUrl is null in document ${e.id}');
+              data['imageUrl'] = ""; // Fix it temporarily
+            }
+
+            return AnswerModel.fromJson(data);
+          }));
+          // List<AnswerModel> answerList = List<AnswerModel>.from(
+          //     answerDocs.docs.map((e) => AnswerModel.fromJson(e.data())));
 
           emit(_Success(
               questionnaireModel:

@@ -13,9 +13,20 @@ class FireBaseServices {
   // final _formkey = GlobalKey<FormState>();
 
   var context;
+  bool _isInitialized = false;
+
+  Future<void> _ensureInitialized() async {
+    if (!_isInitialized) {
+      await _googleSignIn.initialize(
+          serverClientId:'893746628605-nb49hpk6bio4989aogkdt2fh34i6cqc9.apps.googleusercontent.com');
+              
+      _isInitialized = true;
+    }
+  }
 
   Future<User?> signInWithGoogle() async {
     try {
+      await _ensureInitialized();
       final GoogleSignInAccount googleSignInAccount =
           await _googleSignIn.authenticate();
       final GoogleSignInAuthentication googleSignInAuthentication =

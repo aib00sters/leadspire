@@ -7,7 +7,6 @@ import 'package:wellbeings/modules/new_home_page/models/aibotdetails_model.dart'
 import 'package:wellbeings/modules/new_home_page/models/aibotdetails_model/aidetailsmodel.dart';
 import 'package:wellbeings/modules/new_home_page/service/ai_bot_details_service.dart';
 
-
 part 'aibotdata_event.dart';
 part 'aibotdata_state.dart';
 part 'aibotdata_bloc.freezed.dart';
@@ -31,12 +30,12 @@ class AibotdataBloc extends Bloc<AibotdataEvent, AibotdataState> {
           final QuerySnapshot aidataSnapShot = await FirebaseFirestore.instance
               .collection('aibotdetails')
               .where('userid', whereIn: ['common', loginid]).get();
-          final baseurlsnapshot = await FirebaseFirestore.instance
-              .collection('api')
-              .doc('baseurl')
-              .get();
-          final baseurl = baseurlsnapshot.data()!.entries.first.value;
-          print(baseurl);
+          // final baseurlsnapshot = await FirebaseFirestore.instance
+          //     .collection('api')
+          //     .doc('baseurl')
+          //     .get();
+          // final baseurl = baseurlsnapshot.data()!.entries.first.value;
+          // print(baseurl);
           // List<Aidetail> results = aidataSnapShot.docs.map((e) {
           //   return Aidetail(
           //       assistantId: "12",

@@ -71,7 +71,7 @@ class _ChatHomePageState extends State<ChatHomePage> {
     });
   }
 
-  pickImage() async {
+  Future<Null> pickImage() async {
     final picker = ImagePicker();
     final pickedFile = await picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
@@ -384,7 +384,12 @@ class _ChatHomePageState extends State<ChatHomePage> {
 
   @override
   void initState() {
-    _initRenderer();
+    //_initRenderer();
+    // Future.microtask(() async {
+    //   await _initRenderer();
+    //   await history();
+    // });
+      _initialize();
     final homeDataBloc = BlocProvider.of<WebrtcspeakBloc>(context);
     homeDataBloc.add(WebrtcspeakEvent.callavathar(imageurl: widget.imgUrl));
     final participantselectbloc = BlocProvider.of<AddparticipantBloc>(context);
@@ -397,8 +402,12 @@ class _ChatHomePageState extends State<ChatHomePage> {
     participantselectbloc.add(AddparticipantEvent.addparticipant(item: data));
     final refereshBloc = BlocProvider.of<AddparticipantBloc>(context);
     refereshBloc.add(const AddparticipantEvent.loadparticiapants());
-    history();
+    // history();
   }
+  void _initialize() {
+  _initRenderer(); // don’t await here
+  history();       // don’t await here
+}
 
   Future<void> speech(ChatMessage m) async {
     // try {
@@ -530,7 +539,7 @@ class _ChatHomePageState extends State<ChatHomePage> {
     );
   }
 
-  cleardata() {
+  void cleardata() {
     final clearbloc = BlocProvider.of<AddparticipantBloc>(context);
     clearbloc.add(const AddparticipantEvent.clearparticipant());
   }

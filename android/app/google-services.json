@@ -1,173 +1,50 @@
 {
   "project_info": {
-    "project_number": "320893840312",
-    "project_id": "wellbeing-b147a",
-    "storage_bucket": "wellbeing-b147a.appspot.com"
+    "project_number": "893746628605",
+    "project_id": "allai-f466a",
+    "storage_bucket": "allai-f466a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:320893840312:android:cf33f4c20f89298024bd4d",
+        "mobilesdk_app_id": "1:893746628605:android:d9fb031e30cb5e6aadfb94",
         "android_client_info": {
-          "package_name": "com.wellbeing.app"
+          "package_name": "com.allai.allai"
         }
       },
       "oauth_client": [
         {
-          "client_id": "320893840312-qu2adh1q2ecqli5pt7991ba4m7ma3cds.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "320893840312-8c03g3noarfkgkf5rm5t2nddp6q9ej7i.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "320893840312-e7ojnr403hfou2a5o0ui5jt273smi27f.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.wellbeing.app"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:320893840312:android:5402b214e182b07a24bd4d",
-        "android_client_info": {
-          "package_name": "com.wellbeing.wellbeingapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "320893840312-ljr9g55unn39ajkk71gnpnousmqsush4.apps.googleusercontent.com",
+          "client_id": "893746628605-203m75jno556fep7tppnbm1ffu1uc5eq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.wellbeing.wellbeingapp",
-            "certificate_hash": "f2c6d27012fea39d61f3f890b39a88c5ccf6b849"
-          }
-        },
-        {
-          "client_id": "320893840312-qu2adh1q2ecqli5pt7991ba4m7ma3cds.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "320893840312-8c03g3noarfkgkf5rm5t2nddp6q9ej7i.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "320893840312-e7ojnr403hfou2a5o0ui5jt273smi27f.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.wellbeing.app"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:320893840312:android:6ea2c898e0b0721624bd4d",
-        "android_client_info": {
-          "package_name": "com.wellbeing.wellbeingappUs"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "320893840312-1jcqpim7freqbrm18enqtakb78h52bsn.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.wellbeing.wellbeingappUs",
+            "package_name": "com.allai.allai",
             "certificate_hash": "e946b4e1ea78a00af0d4b1a1eebef41aad4c35ac"
           }
         },
         {
-          "client_id": "320893840312-vpnhc31cf0fft51tnthni71bplisp4pk.apps.googleusercontent.com",
+          "client_id": "893746628605-co8gcnjgjra47pnemtori6vpi6mvkb53.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.wellbeing.wellbeingappUs",
-            "certificate_hash": "f2c6d27012fea39d61f3f890b39a88c5ccf6b849"
+            "package_name": "com.allai.allai",
+            "certificate_hash": "6e3c99917f136ae54a5a71a719acaf6750aedb31"
           }
         },
         {
-          "client_id": "320893840312-qu2adh1q2ecqli5pt7991ba4m7ma3cds.apps.googleusercontent.com",
+          "client_id": "893746628605-nb49hpk6bio4989aogkdt2fh34i6cqc9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc"
+          "current_key": "AIzaSyDtljIYlzb5inxMQaYHg6d8JnI39Ko2W0o"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "320893840312-8c03g3noarfkgkf5rm5t2nddp6q9ej7i.apps.googleusercontent.com",
+              "client_id": "893746628605-nb49hpk6bio4989aogkdt2fh34i6cqc9.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "320893840312-e7ojnr403hfou2a5o0ui5jt273smi27f.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.wellbeing.app"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:320893840312:android:e890cd95095b977424bd4d",
-        "android_client_info": {
-          "package_name": "me.carda.awesome_notifications_fcm"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "320893840312-qu2adh1q2ecqli5pt7991ba4m7ma3cds.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "320893840312-8c03g3noarfkgkf5rm5t2nddp6q9ej7i.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "320893840312-e7ojnr403hfou2a5o0ui5jt273smi27f.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.wellbeing.app"
-              }
             }
           ]
         }

@@ -65,13 +65,13 @@ class _QuestionnairePageState extends State<QuestionnairePage> {
                       SizedBox(
                         height: SizeConfig.heightMultiplier * 3,
                       ),
-                      Image.network(
-                        questionnaire.imageUrl,
-                        height: SizeConfig.sizeMultiplier * 43,
-                      ),
-                      SizedBox(
-                        height: SizeConfig.sizeMultiplier * 7,
-                      ),
+                      // Image.network(
+                      //   questionnaire.imageUrl,
+                      //   height: SizeConfig.sizeMultiplier * 43,
+                      // ),
+                      // SizedBox(
+                      //   height: SizeConfig.sizeMultiplier * 7,
+                      // ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [

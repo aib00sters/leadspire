@@ -1,14 +1,13 @@
 buildscript {
-    ext.kotlin_version = '1.9.20'
+    ext.kotlin_version = '1.9.0'
     repositories {
         google()
         mavenCentral()
     }
-    
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.0'
+        classpath 'com.android.tools.build:gradle:8.3.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.google.gms:google-services:4.4.0'
     }
 }
 
@@ -26,14 +25,23 @@ subprojects {
     
     // Remove the evaluationDependsOn line - it's causing the issue
     
-    // Move the afterEvaluate configuration here
+    // Move the afterEvaluate configuration here with compileSdk 35
     afterEvaluate {
         if (project.hasProperty('android')) {
             android {
+                // Force compileSdk 35 for all subprojects including isar_flutter_libs
+                compileSdkVersion 35
+                buildToolsVersion "35.0.0"
+                
+                // Handle namespace for libraries
                 if (namespace == null) {
                     namespace project.group
                 }
             }
         }
     }
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
 }

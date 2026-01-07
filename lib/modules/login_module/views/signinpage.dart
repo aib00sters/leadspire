@@ -174,19 +174,19 @@ class _SignInPageState extends State<SignInPage> {
                 FireBaseServices().signInWithGoogle();
               },
             ),
-            SizedBox(
-              height: SizeConfig.screenheight * .02,
-            ),
-            SignInButton(
-              Buttons.anonymous,
-              text: "Sign in with Phone",
-              onPressed: () {
-                AppNavigator.pushNamed('/phonePage');
-              },
-            ),
-            SizedBox(
-              height: SizeConfig.screenheight * .02,
-            ),
+            // SizedBox(
+            //   height: SizeConfig.screenheight * .02,
+            // ),
+            // SignInButton(
+            //   Buttons.anonymous,
+            //   text: "Sign in with Phone",
+            //   onPressed: () {
+            //     AppNavigator.pushNamed('/phonePage');
+            //   },
+            // ),
+            // SizedBox(
+            //   height: SizeConfig.screenheight * .02,
+            // ),
             // SignInButton(
             //   Buttons.apple,
             //   text: "Sign in with Apple",
@@ -194,11 +194,11 @@ class _SignInPageState extends State<SignInPage> {
             //     AppNavigator.pushNamed('/phonePage');
             //   },
             // )
-            SizedBox(
-                width: SizeConfig.screenwidth * .6,
-                child: SignInWithAppleButton(
-                  onPressed: () => _authService.signInWithApple(context),
-                ))
+            // SizedBox(
+            //     width: SizeConfig.screenwidth * .6,
+            //     child: SignInWithAppleButton(
+            //       onPressed: () => _authService.signInWithApple(context),
+            //     ))
           ],
         ),
       ),

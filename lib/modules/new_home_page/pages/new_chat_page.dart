@@ -10,7 +10,6 @@ import 'package:flutter_webrtc/flutter_webrtc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
-
 import 'package:wellbeings/constants/app_assets.dart';
 import 'package:wellbeings/data/data_center/data_to_classes.dart';
 import 'package:wellbeings/data/isar_models/chat_details_model/chat_details.dart';
@@ -94,7 +93,7 @@ class _ChatNewPageState extends State<ChatNewPage> {
     });
   }
 
-  pickImage() async {
+  Future<Null> pickImage() async {
     final picker = ImagePicker();
     final pickedFile = await picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
@@ -505,16 +504,16 @@ class _ChatNewPageState extends State<ChatNewPage> {
     super.dispose();
   }
 
-  @override
-  Future<void> initState() async {
-    print(widget.video);
-    await analytics.logScreenView(
+  void _analytics() {
+    analytics.logScreenView(
       screenName: 'ChatScreen',
       screenClass: 'ChatScreen',
     );
-    _initRenderer();
-    // final homeDataBloc = BlocProvider.of<WebrtcspeakBloc>(context);
-    // homeDataBloc.add(WebrtcspeakEvent.callavathar(imageurl: widget.imgUrl));
+  }
+
+  Future<void> _initializeAsync() async {
+    await _initRenderer();
+
     final participantselectbloc = BlocProvider.of<AddparticipantBloc>(context);
     final data = Item(
       name: widget.name,
@@ -526,7 +525,15 @@ class _ChatNewPageState extends State<ChatNewPage> {
     participantselectbloc.add(AddparticipantEvent.addparticipant(item: data));
     final refereshBloc = BlocProvider.of<AddparticipantBloc>(context);
     refereshBloc.add(const AddparticipantEvent.loadparticiapants());
-    //history();
+  }
+
+  @override
+  void initState() {
+    print(widget.video);
+    _analytics();
+
+    _initializeAsync();
+    super.initState();
   }
 
   Future<void> speech(ChatMessage m) async {
@@ -659,7 +666,7 @@ class _ChatNewPageState extends State<ChatNewPage> {
     );
   }
 
-  cleardata() {
+  void cleardata() {
     final clearbloc = BlocProvider.of<AddparticipantBloc>(context);
     clearbloc.add(const AddparticipantEvent.clearparticipant());
   }

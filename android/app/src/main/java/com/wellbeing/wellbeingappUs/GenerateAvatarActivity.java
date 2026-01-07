@@ -1,4 +1,4 @@
-package com.wellbeing.wellbeingappUs;
+package com.allai.allai;
 
 import androidx.annotation.NonNull;
 

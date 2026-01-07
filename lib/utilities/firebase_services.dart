@@ -188,27 +188,27 @@ class FireBaseServices {
         await Firebase.initializeApp(
             // name: "production",
             options: const FirebaseOptions(
-                apiKey: "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc",
-                appId: "1:320893840312:android:6ea2c898e0b0721624bd4d",
-                messagingSenderId: "320893840312",
-                projectId: "wellbeing-b147a"));
+                apiKey: "AIzaSyDtljIYlzb5inxMQaYHg6d8JnI39Ko2W0o",
+                appId: "1:893746628605:android:d9fb031e30cb5e6aadfb94",
+                messagingSenderId: "893746628605",
+                projectId: "allai-f466a"));
       } else {
-        await Firebase.initializeApp(
-            // name: "production",
-            options: const FirebaseOptions(
-                apiKey: "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc",
-                appId: "11:320893840312:ios:b16e571f030386c424bd4d",
-                messagingSenderId: "320893840312",
-                projectId: "wellbeing-b147a"));
+        // await Firebase.initializeApp(
+        //     // name: "production",
+        //     options: const FirebaseOptions(
+        //         apiKey: "AIzaSyCgQOVy9f1XtHVed_eGnJUBkMGequxS9Bc",
+        //         appId: "11:320893840312:ios:b16e571f030386c424bd4d",
+        //         messagingSenderId: "320893840312",
+        //         projectId: "wellbeing-b147a"));
       }
     } else {
-      await Firebase.initializeApp(
-          name: "development",
-          options: const FirebaseOptions(
-              apiKey: "AIzaSyBBOCHroicaArCBbGlhsCGOTCkmZdhB9nA ",
-              appId: "1:387394779805:android:0b916506e2030fa90ef274",
-              messagingSenderId: "387394779805",
-              projectId: "wellbeingus-95cea"));
+      // await Firebase.initializeApp(
+      //     name: "development",
+      //     options: const FirebaseOptions(
+      //         apiKey: "AIzaSyBBOCHroicaArCBbGlhsCGOTCkmZdhB9nA ",
+      //         appId: "1:387394779805:android:0b916506e2030fa90ef274",
+      //         messagingSenderId: "387394779805",
+      //         projectId: "wellbeingus-95cea"));
     }
 
     FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);

@@ -6,7 +6,6 @@ import 'package:wellbeings/data/isar_services.dart';
 import 'package:wellbeings/modules/chat_bot_modeule/models/respocemodel.dart';
 import 'package:wellbeings/modules/new_home_page/models/aibotdetails_model.dart';
 
-
 Future<Aibotdetailsmodel> getaibotdetails() async {
   // Map map = {"prompt": text1};
   const String url = Urls.loginUrl;
@@ -15,10 +14,11 @@ Future<Aibotdetailsmodel> getaibotdetails() async {
   // const loginid = "9500556768";
   // const name = "Joe";
 
-  Map<String, dynamic> data = {
+  Map<String, String> data = {
     'name': name,
-    'id': loginid,
-    'key': '5jtye0eenfza-qbopzube4ffi8vt19r-ogluzgulead123',
+    'id': loginid.toString(),
+    'key': 'lo7ye0eenfza-5897lzube4ffi859liu-8ohuzguleuipo9'
+    // '5jtye0eenfza-qbopzube4ffi8vt19r-ogluzgulead123',
   };
   // Map<String, dynamic> data = {
   //   'name': loginid,
@@ -31,9 +31,9 @@ Future<Aibotdetailsmodel> getaibotdetails() async {
       Uri.parse(url),
       headers: {
         'accept': 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: jsonEncode(data),
+      body: data,
     );
     final Map<String, dynamic> decoded = jsonDecode(response.body);
     print(response.body);

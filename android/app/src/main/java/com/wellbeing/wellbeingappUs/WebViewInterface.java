@@ -1,4 +1,4 @@
-package com.wellbeing.wellbeingappUs;
+package com.allai.allai;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
